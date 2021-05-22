@@ -1,3 +1,9 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 .navbar .navbar-nav .nav-link {
     color: #000000;
     font-size: 1.1em;
@@ -9,8 +15,8 @@
     padding: .5em 1em;
 }
 
-.navbar{
-    border-bottom: solid red 3px;
+.navbar, .carousel, .info-box, .info-banner, .shop, .shop-mobile, .product-list{
+    border: solid red 3px;
 }
 
 @media (min-width: 992px) and (max-width: 1280px){
@@ -38,10 +44,6 @@
     }
 }
 
-.carousel{
-    border-bottom: solid red 3px;
-}
-
 .carousel-indicators li{
     width: 50%;
 }
@@ -53,10 +55,135 @@
 
 .block {
     height: 250px;
-    background: rgba(86,61,124,.15);
+    /* background: rgba(86,61,124,.15); */
+    border: solid black 3px;
     margin: 15px 0 15px 0;
 }
 
-h2.description{
+.carousel-caption{
+    padding-bottom: 360px;
+    font-size: 40px;
+}
 
+.h4-responsive{
+    font-size: 70px;
+}
+
+@media (max-width: 410px ){
+    .carousel-caption{
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+    .h4-responsive{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 411px) and (max-width: 767px ){
+    .carousel-caption{
+        padding-bottom: 30px;
+        font-size: 10px;
+    }
+    .h4-responsive{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px ){
+    .carousel-caption{
+        padding-bottom: 110px;
+        font-size: 15px;
+    }
+    .h4-responsive{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1281px ){
+    .carousel-caption{
+        padding-bottom: 250px;
+        font-size: 20px;
+    }
+    .h4-responsive{
+        font-size: 70px;
+    }
+    .goto-shop{
+        margin-right: 200px;
+    }
+}
+
+.info-banner{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    padding: 15px;
+}
+
+.shop-mobile{
+    height: 250px;
+    width: 350px;
+    margin: 25px auto;
+}
+
+.title-shop-mobile{
+    text-align: center;
+    line-height: 7;
+}
+
+@media (max-width: 360px){
+    .shop-mobile{
+        height: 150px;
+        width: 280px;
+    }
+    
+    .title-shop-mobile{
+        line-height: 4.2;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px ){
+    .goto-shop{
+        margin-right: 230px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px ){
+    .goto-shop{
+        margin-right: 505px;
+    }
+}
+
+.store-button {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    padding: 5px 5px;
+}
+
+.nav-contact-arrow{
+    padding-left: 220px;
+}
+
+.splide__slide{
+    padding: 5px;
+}
+
+.splide__arrow{
+    top: 80%;
+}
+
+.splide__arrow--prev{
+    left: -85%;
+}
+
+.splide__arrow--next{
+    left: -65%;
+}
+
+.product-text{
+    margin: auto;
+}
+
+.product-list{
+    margin-top: 15px;
 }

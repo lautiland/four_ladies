@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Four Ladies</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #6ceaf9;">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #ffffff;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
                 aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,7 +50,7 @@
                         <a href="#" class="nav-link">Titulo/Contenido</a>
                     </li>
                     <li class="nav-item d-md-none">
-                        <a href="#" class="nav-link">Contacto</a>
+                        <a href="#" class="nav-link">Contacto <i class="fas fa-chevron-right nav-contact-arrow"></i></a>
                     </li>  
                 </ul>
             </div>
@@ -71,7 +73,7 @@
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
                 alt="First slide">
                 <div class="carousel-caption">
-                    <h3 class="h4-responsive">Primer Producto</h3>
+                    <h3 class="h4-responsive"><a href="">Primer Producto</a></h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, velit?</p>
                 </div>
             </div>
@@ -81,7 +83,7 @@
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
                 alt="Second slide">
                 <div class="carousel-caption">
-                    <h3 class="h4-responsive">Segundo Producto</h3>
+                    <h3 class="h4-responsive"><a href="">Segundo Producto</a></h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, magni.</p>
                 </div>
             </div>
@@ -91,7 +93,7 @@
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
                 alt="Third slide">
                 <div class="carousel-caption">
-                    <h3 class="h4-responsive">Tercer Producto</h3>
+                    <h3 class="h4-responsive"><a href="">Tercer Producto</a></h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laudantium!</p>
                 </div>
             </div>
@@ -110,32 +112,125 @@
     <!-- Carousel -->
 
     <!-- Cards -->
-    <section class="d-flex text-center">
-        <div class="container d-flex justify-content-center">
+    <section class="d-flex text-center info-box">
+        <div class="container d-flex justify-content-center d-none d-md-block">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-6 col-xl-4 ">
                     <div class="d-flex flex-column text-center justify-content-center p-3 block">
-                        <h2 class="description">ENVIOS GRATIS DENTRO DE CTES. CAPITAL</h2>
+                        <h2 class="description">Envios gratis dentro de Ctes. capital</h2>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="d-flex flex-column text-center justify-content-center p-3 block">
-                        <h2 class="description">ACEPTAMOS TODOS LOS MEDIOS DE PAGO</h2>
+                        <h2 class="description">Aceptamos todos los medios de pago</h2>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="d-flex flex-column text-center justify-content-center p-3 block">
-                        <h2 class="description">ENVIOS LOW COST A TODO EL PAIS</h2>
+                        <h2 class="description">Envios low cost a todo el pais</h2>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="info-banner d-md-none">
+            <p>Envios gratis dentro de Ctes. capital</p>
+            <p>Aceptamos todos los medios de pago</p>
+            <p>Envios low cost a todo el pais</p>
+        </div>
     </section>
-
-
     <!-- Cards -->
+
+    <!-- Shop -->
+    <div class="shop d-none d-md-block">
+        <h2 class="title-shop text-center p-5"><a href="">SHOP</a></h2>
+        <h5 class="goto-shop text-right"><a href="">VER TODO <i class="far fa-arrow-alt-circle-right"></i></a></h5>
+        <div class="d-flex text-center shop-tiles">
+            <div class="container d-flex justify-content-center">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 col-xl-4 ">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 ">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h3 class="description">¿Buscas más productos?</h3>
+                            <p>¡Encontralos acá!</p>
+                            <button class="store-button">Store</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 ">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column text-center justify-content-center p-3 block">
+                            <h2 class="description"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-mobile d-md-none">
+        <h2 class="title-shop-mobile"><a href="">SHOP</a></h2>
+    </div>
+    <!-- Shop -->
+
+    <!-- Products -->
+    <div class="container d-none d-md-block product-list">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="product-text">
+                    <h4>Conocé nuestros productos</h4>
+                    <p>Deslizá para verlos</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide"><img src="https://via.placeholder.com/150" alt=""></div>
+                            <div class="splide__slide"><img src="https://via.placeholder.com/150" alt=""></div>
+                            <div class="splide__slide"><img src="https://via.placeholder.com/150" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
