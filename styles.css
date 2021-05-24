@@ -15,9 +15,9 @@ header{
     padding: .5em 1em;
 }
 
-.navbar, .carousel, .info-box, .info-banner, .shop, .shop-mobile, .product-list{
+/* .navbar, .carousel, .info-box, .info-banner, .shop, .shop-mobile, .product-list, .info-product, .brands, .clients{
     border: solid red 3px;
-}
+} */
 
 @media (min-width: 992px) and (max-width: 1280px){
     .navbar ul li{
@@ -123,6 +123,7 @@ header{
     height: 250px;
     width: 350px;
     margin: 25px auto;
+    border: black solid 3px;
 }
 
 .title-shop-mobile{
@@ -166,6 +167,7 @@ header{
 
 .splide__slide{
     padding: 5px;
+    border: black solid 1px;
 }
 
 .splide__arrow{
@@ -173,17 +175,106 @@ header{
 }
 
 .splide__arrow--prev{
-    left: -85%;
+    left: -67%;
 }
 
 .splide__arrow--next{
-    left: -65%;
+    left: -50%;
 }
 
 .product-text{
-    margin: auto;
+    padding-top: 25px;
 }
 
 .product-list{
     margin-top: 15px;
+}
+
+.product-slide{
+    margin: 5px 0 5px 0;
+}
+
+.product-list-mobile .row{
+    margin: 0;
+}
+
+.product-list-mobile-img{
+    height: 250px;
+    width: 50px;
+    margin: 5px;
+    border: black solid 3px;
+    justify-content:right
+}
+
+.product-list-mobile img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-list-mobile-text{
+    font-size: 15px;
+}
+
+.product-list-mobile-text h4{
+    font-size: 15px;
+}
+
+@media (max-width: 800px){
+    .product-list-mobile-text{
+        font-size: 10px;
+    }
+    
+    .product-list-mobile-text h4{
+        font-size: 10px;
+    }
+}
+
+.info-product{
+    margin-top: 15px;
+}
+
+.info-product-text{
+    margin: auto;
+}
+
+.info-product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brands{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.brands img{
+    padding: 10px;
+}
+
+.clients h4, .clients p{
+    margin-top: 15px;
+}
+
+footer{
+    background-color: #000000;
+    color: white;
+}
+
+footer a, footer img{
+    color: white!important;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+.footer-icons{
+    font-size: 40px;
+}
+
+.footer-icons i{
+    padding: 15px;
 }
