@@ -2,6 +2,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 999;
+    border-bottom: #000000 solid 2px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -11,6 +12,12 @@ header{
 .navbar .navbar-nav .nav-link:hover{
     color: #808080;
 }
+
+.navbar .navbar-nav .desktop-menu {
+    width: 75px;
+    text-align: center;
+}
+
 .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 }
@@ -60,9 +67,8 @@ header{
     margin: 15px 0 15px 0;
 }
 
-.carousel-caption{
-    padding-bottom: 360px;
-    font-size: 40px;
+.carousel-inner .carousel-item .carousel-caption{
+    justify-self: center;
 }
 
 .h4-responsive{
@@ -71,7 +77,6 @@ header{
 
 @media (max-width: 410px ){
     .carousel-caption{
-        padding-bottom: 5px;
         font-size: 10px;
     }
     .h4-responsive{
@@ -81,7 +86,6 @@ header{
 
 @media (min-width: 411px) and (max-width: 767px ){
     .carousel-caption{
-        padding-bottom: 30px;
         font-size: 10px;
     }
     .h4-responsive{
@@ -91,7 +95,6 @@ header{
 
 @media (min-width: 768px) and (max-width: 1000px ){
     .carousel-caption{
-        padding-bottom: 110px;
         font-size: 15px;
     }
     .h4-responsive{
@@ -101,7 +104,6 @@ header{
 
 @media (min-width: 1000px) and (max-width: 1281px ){
     .carousel-caption{
-        padding-bottom: 250px;
         font-size: 20px;
     }
     .h4-responsive{
@@ -194,16 +196,18 @@ header{
     margin: 5px 0 5px 0;
 }
 
+.product-list-mobile {
+    padding: 15px 0;
+}
+
 .product-list-mobile .row{
     margin: 0;
 }
 
 .product-list-mobile-img{
-    height: 250px;
-    width: 50px;
-    margin: 5px;
+    height: 200px;
     border: black solid 3px;
-    justify-content:right
+    margin: 5px;
 }
 
 .product-list-mobile img{
@@ -213,6 +217,8 @@ header{
 }
 
 .product-list-mobile-text{
+    align-self: center;
+    text-align: center;
     font-size: 15px;
 }
 
@@ -232,10 +238,6 @@ header{
 
 .info-product{
     margin-top: 15px;
-}
-
-.info-product-text{
-    margin: auto;
 }
 
 .info-product-image img{
@@ -261,6 +263,14 @@ header{
 footer{
     background-color: #000000;
     color: white;
+}
+
+hr {
+    color: #000000;
+    background-color: #000000;
+    border: none;
+    border-bottom: black 2px;
+    height: 1px;
 }
 
 footer a, footer img{
