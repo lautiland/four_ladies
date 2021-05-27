@@ -27,17 +27,17 @@
                 <ul class="navbar-nav mx-auto">
                     <!-- Desktop -->
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link desktop-menu" href="#">Inicio</a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link desktop-menu" href="#">Shop</a>
                     </li>
                     <a class="d-none d-lg-block" href="#"><img src="https://codingyaar.com/wp-content/uploads/logo.png"></a>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Buscar</a>
+                        <a class="nav-link desktop-menu" href="#">Buscar</a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link desktop-menu" href="#">Contacto</a>
                     </li>
                     <!-- Desktop -->
                     <!-- Mobile -->
@@ -67,7 +67,7 @@
     </header>
 
     <!-- Carousel -->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
         
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
@@ -77,7 +77,7 @@
         
         <div class="carousel-inner" role="listbox">
 
-            <div class="carousel-item active">
+            <div class="carousel-item active"> 
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
                 alt="First slide">
                 <div class="carousel-caption">
@@ -87,7 +87,7 @@
             </div>
 
 
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
                 alt="Second slide">
                 <div class="carousel-caption">
@@ -97,7 +97,7 @@
             </div>
 
 
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
                 alt="Third slide">
                 <div class="carousel-caption">
@@ -116,25 +116,69 @@
         <span class="sr-only">Next</span>
         </a>
 
-    </div>
+    </div> -->
     <!-- Carousel -->
 
-    <!-- Info-Box -->
+    <!-- Carousel2 -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                alt="First slide">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h4 class="h4-responsive">Primer Producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                alt="Second slide">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h4 class="h4-responsive">Segundo Producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                alt="Third slide">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h4 class="h4-responsive">Tercer Producto</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Carousel2 -->
+
+    <!-- Cards -->
     <section class="d-flex text-center info-box">
         <!-- Desktop -->
         <div class="container d-flex justify-content-center d-none d-md-block">
             <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-6 col-xl-4 ">
+                <div class="col-12 col-md-4">
                     <div class="d-flex flex-column text-center justify-content-center p-3 block">
                         <h2 class="description">Envios gratis dentro de Ctes. capital</h2>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class="col-12 col-md-4">
                     <div class="d-flex flex-column text-center justify-content-center p-3 block">
                         <h2 class="description">Aceptamos todos los medios de pago</h2>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class="col-12 col-md-4">
                     <div class="d-flex flex-column text-center justify-content-center p-3 block">
                         <h2 class="description">Envios low cost a todo el pais</h2>
                     </div>
@@ -160,49 +204,58 @@
         <div class="d-flex text-center shop-tiles">
             <div class="container d-flex justify-content-center">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-12 col-md-6 col-xl-4 ">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 ">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <h3 class="description">¿Buscas más productos?</h3>
                             <p>¡Encontralos acá!</p>
                             <button class="store-button">Store</button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 ">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    
+                    <div class="col-sm-4">
                         <div class="d-flex flex-column text-center justify-content-center p-3 block">
                             <img src="https://via.placeholder.com/200" alt="">
                         </div>
@@ -246,15 +299,19 @@
     <!-- Mobile -->
     <div class="container d-md-none product-list-mobile">
         <div class="row">
-            <div class="col-12 col-sm-2 product-list-mobile-text">
+            <div class="col-4 product-list-mobile-text">
                 <h4>Conocé nuestros productos</h4>
                 <button>Ver</button>
             </div>
-            <div class="col-12 col-sm-4 product-list-mobile-img">
-                <img src="https://via.placeholder.com/150" alt="">
+            <div class="col-4 p-0">
+                <div class="product-list-mobile-img">
+                    <img src="https://via.placeholder.com/150" alt="">
+                </div>
             </div>
-            <div class="col-12 col-sm-4 product-list-mobile-img">
-                <img src="https://via.placeholder.com/150" alt="">
+            <div class="col-4 p-0">
+                <div class="product-list-mobile-img">
+                    <img src="https://via.placeholder.com/150" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -282,6 +339,7 @@
     </div>
     <!-- Desktop -->
     <!-- Mobile -->
+
     <!-- Mobile -->
     <!-- Info-Product -->
 
@@ -305,6 +363,7 @@
     </div>
     <!-- Desktop -->
     <!-- Mobile -->
+
     <!-- Mobile -->
     <!-- Brands -->
 
@@ -330,23 +389,33 @@
     </div>
     <!-- Desktop -->
 
+    <!-- Logo -->
+    <!-- Mobile -->
+    <div style="padding: 10px 20px;">
+        <hr>
+        <h4 style="text-align: center;">Four Ladies</h4>
+        <hr>
+    </div>
+    <!-- Mobile -->
+
+
     <!-- Footer -->
     <footer>
         <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <ul class="navbar-nav mx-auto">
                     <!-- Desktop -->
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link desktop-menu" href="#">Inicio</a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link desktop-menu" href="#">Shop</a>
                     </li>
                     <a class="d-none d-lg-block" href="#"><img src="./image.png"></a>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Buscar</a>
+                        <a class="nav-link desktop-menu" href="#">Buscar</a>
                     </li>
                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link desktop-menu" href="#">Contacto</a>
                     </li>
                     <!-- Desktop -->
                     <!-- Mobile -->
