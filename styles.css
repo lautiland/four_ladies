@@ -1,3 +1,12 @@
+body{
+    font-family: "Libre Baskerville", sans-serif;
+    font-style: normal;
+    background-color: #f9e3d3;
+    color: white;
+}
+
+/* HEADER */
+
 header{
     position: sticky;
     top: 0;
@@ -5,12 +14,22 @@ header{
     border-bottom: #000000 solid 2px;
 }
 
+.logo{
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    margin: 0 55px;
+    letter-spacing: 2px;
+}
+
 .navbar .navbar-nav .nav-link {
-    color: #000000;
+    color: rgb(255, 255, 255);
     font-size: 1.1em;
 }
-.navbar .navbar-nav .nav-link:hover{
-    color: #808080;
+.navbar .navbar-nav .nav-link:hover, .logo:hover{
+    color: #fff;
+    text-decoration: none;
 }
 
 .navbar .navbar-nav .desktop-menu {
@@ -18,13 +37,28 @@ header{
     text-align: center;
 }
 
-.navbar-logo-centered .navbar-nav .nav-link{
-    padding: .5em 1em;
+.desktop-menu::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60px;
+    width: 0%;
+    transition: all ease-in-out 350ms;
 }
 
-/* .navbar, .carousel, .info-box, .info-banner, .shop, .shop-mobile, .product-list, .info-product, .brands, .clients{
-    border: solid red 3px;
-} */
+.desktop-menu:hover:before{
+    width: 100%;
+}
+
+.desktop-menu-cont{
+    font-size: 1.8em;
+}
+
+.navbar-logo-centered .navbar-nav .nav-link {
+    padding: .5em 1em;
+}
 
 @media (min-width: 992px) and (max-width: 1280px){
     .navbar ul li{
@@ -51,8 +85,22 @@ header{
     }
 }
 
+/* HEADER */
+
+/* CAROUSEL */
+
+.video-slide{
+    margin: 75px 100px;
+    background-color: black;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
 .carousel-indicators li{
-    width: 50%;
+    margin-top: -145px;
+    width: 15%;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -60,12 +108,255 @@ header{
     width: 30px;
 }
 
-.block {
-    height: 250px;
-    /* background: rgba(86,61,124,.15); */
-    border: solid black 3px;
-    margin: 15px 0 15px 0;
+#carouselExampleCaptions .carousel-control-prev, .carousel-control-next{
+    top: 40%;
+    bottom: 40%;
 }
+
+.carousel-control-prev{
+    margin-left: 100px;
+}
+
+.carousel-control-next{
+    margin-right: 100px;
+}
+
+
+
+/* CAROUSEL */
+
+/* FEATURES */
+
+.img-features-container{
+    margin: 0;
+    width: 100%;
+}
+
+.features-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 25px;
+}
+
+.cards h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.opacity{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(50%);
+    box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -webkit-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -moz-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+}
+
+.description{
+    width: 185px;
+    font-size: 30px;
+}
+
+.description2{
+    width: 165px;
+    font-size: 30px;
+}
+
+.description3{
+    width: 185px;
+    font-size: 30px;
+}
+
+.description-italic{
+    font-style: italic;
+}
+
+/* FEATURES */
+
+/* BRANDS */
+
+.brands-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand{
+    position: relative;
+    margin: 95px 35px 0 35px;
+}
+
+.brand-image{
+    width: 480px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -webkit-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -moz-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+}
+
+/* BRANDS */
+
+/* SHOP */
+
+.shop h2{
+    text-align: center;
+    color: #773400;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 75px;
+    margin: 95px 0;
+}
+
+.shop-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-image{
+    margin: 0 25px;
+}
+
+.shop-image img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -webkit-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -moz-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+}
+
+.shop-banner{
+    text-align: center;
+    background-color: black;
+    width: 63.1%;
+    margin: 95px auto;
+    padding: 15px;
+}
+
+.shop-banner h3, .shop-banner h4{
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+/* SHOP */
+
+/* PRODUCTS SLIDE */
+
+.products-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 95px;
+}
+
+.products-slide-text{
+    margin-right: 30px;
+}
+
+.products-slide-text h4{
+    text-align: center;
+    color: #773400;
+    font-family: 'Libre Baskerville', serif;
+    font-weight:bolder;
+    font-size: 85px;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.products-slide-text p{
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(83, 83, 83);
+    text-align: center;
+    font-size: 30px;
+    width: 440px;
+    margin: auto;
+}
+
+.products-slide-images{
+    
+}
+
+.products-slide-images img{
+    width: 250px;
+    height: 600px;
+    object-fit: cover;
+    margin-right: 35px;
+    box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -webkit-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -moz-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+}
+
+/* PRODUCTS SLIDE */
+
+/* CONTACT */
+
+.contact-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 95px;
+}
+
+.contact-image{
+
+}
+
+.contact-image img{
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -webkit-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -moz-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    margin-right: 95px;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text h4{
+    text-align: center;
+    color: #773400;
+    font-family: 'Libre Baskerville', serif;
+    font-weight:bolder;
+    font-size: 85px;
+    margin: auto;
+    padding: 45px;
+}
+
+.contact-button{
+    background: #ffc2bf;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -webkit-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    -moz-box-shadow: 0px 3px 16px 3px rgba(36,36,36,0.39);
+    padding:    10px 45px;
+    color:  #000000;
+    font-size: 25px;
+    font-weight: 700;
+    display:    inline-block;
+    text-align: center;
+}
+
+/* CONTACT */
+
 
 .carousel-inner .carousel-item .carousel-caption{
     justify-self: center;
@@ -114,25 +405,6 @@ header{
     }
 }
 
-.info-banner{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 100%;
-    padding: 15px;
-}
-
-.shop-mobile{
-    height: 250px;
-    width: 350px;
-    margin: 25px auto;
-    border: black solid 3px;
-}
-
-.title-shop-mobile{
-    text-align: center;
-    line-height: 7;
-}
-
 @media (max-width: 360px){
     .shop-mobile{
         height: 150px;
@@ -156,74 +428,8 @@ header{
     }
 }
 
-.store-button {
-    width: 40%;
-    margin: auto;
-    background-color: white;
-    padding: 5px 5px;
-}
-
 .nav-contact-arrow{
     padding-left: 220px;
-}
-
-.splide__slide{
-    padding: 5px;
-    border: black solid 1px;
-}
-
-.splide__arrow{
-    top: 80%;
-}
-
-.splide__arrow--prev{
-    left: -67%;
-}
-
-.splide__arrow--next{
-    left: -50%;
-}
-
-.product-text{
-    padding-top: 25px;
-}
-
-.product-list{
-    margin-top: 15px;
-}
-
-.product-slide{
-    margin: 5px 0 5px 0;
-}
-
-.product-list-mobile {
-    padding: 15px 0;
-}
-
-.product-list-mobile .row{
-    margin: 0;
-}
-
-.product-list-mobile-img{
-    height: 200px;
-    border: black solid 3px;
-    margin: 5px;
-}
-
-.product-list-mobile img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.product-list-mobile-text{
-    align-self: center;
-    text-align: center;
-    font-size: 15px;
-}
-
-.product-list-mobile-text h4{
-    font-size: 15px;
 }
 
 @media (max-width: 800px){
@@ -236,28 +442,8 @@ header{
     }
 }
 
-.info-product{
-    margin-top: 15px;
-}
+.gif-mobile{
 
-.info-product-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.brands{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 15px;
-}
-
-.brands img{
-    padding: 10px;
-}
-
-.clients h4, .clients p{
-    margin-top: 15px;
 }
 
 footer{
