@@ -22,24 +22,24 @@
 <body>
     <header>
         <!-- NavBar -->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: rgb(0, 0, 0);">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
                 aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand d-lg-none logo" href="#">Four Ladies</a>
+            <a class="navbar-brand d-lg-none logo" href="./index.html">Four Ladies</a>
             <div class="collapse navbar-collapse" id="myNavbarToggler7">
                 <ul class="navbar-nav mx-auto">
                     <!-- Desktop -->
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Inicio</a>
+                        <a class="nav-link desktop-menu desktop-menu-active" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Shop</a>
+                        <a class="nav-link desktop-menu" href="https://www.instagram.com/fourladies_cosmetics/" target="_blank">Shop</a>
                     </li>
-                    <a class="d-none d-lg-block logo" href="#">Four Ladies</a>
+                    <a class="d-none d-lg-block logo" href="./index.html">Four Ladies</a>
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Buscar</a>
+                        <a class="nav-link desktop-menu" href="./about-us.html">Sobre mi</a>
                     </li>
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
                         <a class="nav-link desktop-menu" href="contacto.html">Contacto</a>
@@ -47,22 +47,16 @@
                     <!-- Desktop -->
                     <!-- Mobile -->
                     <li class="nav-item d-md-none">
-                        <a href="#" class="nav-link">Tienda Online</a>
+                        <a href="./index.html" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item d-md-none">
-                        <a href="#" class="nav-link">Nuevos Productos</a>
+                        <a href="https://www.instagram.com/fourladies_cosmetics/" target="_blank" class="nav-link">Shop</a>
                     </li>
                     <li class="nav-item d-md-none">
-                        <a href="#" class="nav-link">Clientas</a>
+                        <a href="./about-us.html" class="nav-link">Sobre mi</a>
                     </li>
                     <li class="nav-item d-md-none">
-                        <a href="#" class="nav-link">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item d-md-none">
-                        <a href="#" class="nav-link">Titulo/Contenido</a>
-                    </li>
-                    <li class="nav-item d-md-none">
-                        <a href="contacto.html" class="nav-link dropdown">Contacto <i class="fas fa-chevron-right nav-contact-arrow"></i></a>
+                        <a href="./contacto.html" class="nav-link dropdown">Contacto <i class="fas fa-chevron-right nav-contact-arrow"></i></a>
                     </li>
                     <!-- Mobile -->  
                 </ul>
@@ -72,7 +66,7 @@
     </header>
 
     <!-- Carousel2 -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="15000">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -80,13 +74,13 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="video-slide">
-                    <video height="650" class="w-100" src="./assets/video/Slide-1.mp4" controls loop
+                    <video height="650" class="w-100" src="./assets/video/Slide-1.mp4" controls loop muted autoplay
                     alt="First slide"></video>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="video-slide">
-                    <video height="650" class="w-100" src="./assets/video/Slide-2.mp4" controls loop
+                    <video height="650" class="w-100" src="./assets/video/Slide-2.mp4" controls loop muted autoplay
                     alt="Second slide"></video>
                 </div>
             </div>
@@ -101,6 +95,10 @@
         </a>
     </div>
     <!-- Carousel2 -->
+    
+    <div class="mobile-video">
+        <video src="./assets/video/mobile.mp4" controls loop muted autoplay></video>
+    </div>
 
     <!-- Features -->
     <section class="info-box">
@@ -121,7 +119,11 @@
         </div>
         <!-- Desktop -->
         <!-- Mobile -->
-
+        <div class="features-banner">
+            <p>Envios GRATIS en todo Ctes. Capital</p>
+            <p>TODOS los medios de pago</p>
+            <p>Envios LOW COST a todo el pais</p>
+        </div>
         <!-- Mobile -->
     </section>
     <!-- Features -->
@@ -145,7 +147,7 @@
     <!-- Shop -->
     <!-- Desktop -->
     <section class="shop">
-        <h2>Shop</h2>
+        <h2><a href="https://www.instagram.com/fourladies_cosmetics/" target="_blank">Shop</a></h2>
         <div class="shop-images">
             <div class="shop-image">
                 <img src="./assets/img/2.jpeg" alt="">
@@ -185,8 +187,12 @@
             </div>
         </div>
     </section>
-    
     <!-- Desktop -->
+    <!-- Mobile -->
+    <div class="shop-mobile">
+        <h2>Shop</h2>
+    </div>
+    <!-- Mobile -->
     <!-- Shop -->
     
     <!-- Products Slide -->
@@ -204,7 +210,35 @@
         </div>
     </div>
     <!-- Desktop -->
+    <!-- Mobile -->
+    <div class="products-slide-mobile">
+        <div class="products-slide-text-mobile">
+            <h4>Four Ladies</h4>
+            <p>Maquillaje como expresión de amor</p>
+        </div>
+        <div class="products-slide-images-mobile">
+            <img src="./assets/img/12.jpeg" alt="">
+            <img src="./assets/img/descarga.jpg" alt="">
+        </div>
+    </div>
+    <!-- Mobile -->
     <!-- Products Slide -->
+
+    <div class="new-products">
+        <h2>Nuevos Productos</h2>
+    </div>
+
+    <div class="brands-banner-mobile">
+        <div class="brand-mobile">
+            <img src="./assets/img/Marca2.jpeg" alt="">
+        </div>
+        <div class="brand-mobile">
+            <img src="./assets/img/marca1.png" alt="">
+        </div>
+        <div class="brand-mobile">
+            <img src="./assets/img/marca3.png" alt="">
+        </div>
+    </div>
 
     <!-- Contact -->
     <!-- Desktop -->
@@ -214,51 +248,53 @@
         </div>
         <div class="contact-text">
             <h4>Contáctanos</h4>
-            <a href="" class="contact-button">Contacto</a>
+            <a href="./contacto.html" class="contact-button">Contacto</a>
         </div>
     </div>
     <!-- Desktop -->
+    <!-- Mobile -->
+    <div class="contact-us">
+        <h2>Contactanos</h2>
+    </div>
+    <!-- Mobile -->
     <!-- Contact -->
 
     <!-- Footer -->
     <footer>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <!-- Desktop -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light nav-footer">
                 <ul class="navbar-nav mx-auto">
-                    <!-- Desktop -->
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Inicio</a>
+                        <a class="nav-link desktop-menu desktop-menu-active" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Shop</a>
+                        <a class="nav-link desktop-menu" href="https://www.instagram.com/fourladies_cosmetics/" target="_blank">Shop</a>
                     </li>
                     <a class="d-none d-lg-block logo" href="#">Four Ladies</a>
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Buscar</a>
+                        <a class="nav-link desktop-menu" href="./about-us.html">Sobre mi</a>
                     </li>
                     <li class="nav-item d-none d-md-block desktop-menu-cont">
-                        <a class="nav-link desktop-menu" href="#">Contacto</a>
+                        <a class="nav-link desktop-menu" href="./contacto.html">Contacto</a>
                     </li>
-                    <!-- Desktop -->
-                    <!-- Mobile -->
-                    <li class="nav-item d-md-none">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <!-- Mobile -->
                 </ul>
             </div>
         </nav>
-        <!-- <div class="container text-center">
-            <p class="d-none d-md-block">Seguinos</p>
-            <div class="footer-icons">
-                <i class="fab fa-whatsapp"></i><i class="fab fa-instagram"></i>
-            </div>
-            
-        </div> -->
+        <!-- Desktop -->
+        <!-- Mobile -->
+        <div class="logo-footer">
+            <hr>
+            <h2>Four Ladies</h2>
+            <hr>
+        </div>
+        <div class="instagram-footer">
+            <a href="https://www.instagram.com/fourladies_cosmetics/" target="_blank"><h2>¡Encontranos en Instagram! <i class="fab fa-instagram"></i></h2></a>
+        </div>
+        <!-- Mobile -->
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
