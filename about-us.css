@@ -60,3 +60,47 @@
     color: black;
     text-decoration: none;
 }
+
+@media (max-width: 575px){
+    .about-us-container{
+        flex-direction: column;
+    }
+
+    .about-us-image{
+        margin: 20px auto;
+    }
+
+    .about-us-image img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .about-us-text{
+        color: black;
+        margin: auto;
+        width: 285px;
+    }
+
+    .about-us-paragraph{
+        font-size: 12px;
+        width: 285px;
+        font-weight: normal;
+    }
+
+    .capital:first-letter{
+        float:left;
+        font-weight: bold;
+        font-size: 30px;
+        font-size: 6rem;
+        line-height: 40px;
+        line-height: 5rem;
+        height:4rem;
+        text-transform: uppercase;
+        margin: 15px 15px 0 0;
+    }
+
+    .about-us-title{
+        font-size: 18px;
+    }
+}
