@@ -374,7 +374,7 @@ hr {
     height: 1px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 575px){
     .navbar{
         height: 60px;
         padding: .5em 0;
@@ -584,69 +584,39 @@ hr {
 
 }
 
-@media (min-width: 546px) and (max-width: 1200px){
-    .logo{
-        font-size: 26px;
+@media (min-width: 576px){
+    .mobile-video{
+        display: none;
     }
-
-    .mobile-video, .mobile-video video{
-        height: 300px;
-    }
-
     .features-banner{
-        height: 100px;
-    }
-
-    .features-banner p{
-        font-size: 16px;
-    }
-
-    .products-slide-mobile{
-        justify-content: center;
-    }
-
-    .products-slide-text-mobile{
-        width: 320px;
-    }
-
-    .products-slide-text-mobile h4{
-        font-size: 26px;
-    }
-
-    .products-slide-text-mobile p{
-        width: 220px;
-        font-size: 22px;
-    }
-
-    .products-slide-images-mobile img{
-        width: 125px;
-        height: 270px;
+        display: none;
     }
 
     .shop-mobile{
-        background-position: 0 -30px;
+        display: none;
+    }
+
+    .products-slide-mobile{
+        display: none;
     }
 
     .new-products{
-        background-position: 0 -170px;
+        display: none;
     }
 
     .brands-banner-mobile{
-        height: 120px;
-    }
-
-    .brand-mobile img{
-        width: 150px;
-        height: 50px;
+        display: none;
     }
 
     .contact-us{
-        background-position: 0 -160px;
+        display: none;
     }
-}
 
-@media (min-width: 1201px){
-    .mobile-video, .features-banner, .shop-mobile, .products-slide-mobile, .new-products, .brands-banner-mobile, .contact-us, .logo-footer, .instagram-footer{
+    .logo-footer{
+        display: none;
+    }
+
+    .instagram-footer{
         display: none;
     }
 }
